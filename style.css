@@ -1,0 +1,227 @@
+html, body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    color: #333;
+}
+* {
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+    font-optical-sizing: auto;
+    max-width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 100px;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    height: fit-content;
+}
+.menu {
+    display: flex;
+    margin: 10px;
+}
+nav ul{
+    justify-content: space-between;
+    display: flex;
+    list-style: none;
+    color: grey;
+}
+.dropdown {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    gap: 3px;
+}
+.dropdown img {
+    height: 8px;
+    transition: transform 0.3s ease;
+}
+.dropdown:hover .arrow-icon {
+    transform: rotate(180deg);
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    max-width: 250px;
+    font-size: small;
+}
+.dropdown-content li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+.dropdown-content li:hover {
+    background-color: grey;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content li {
+    padding: 5px 10px;
+}
+.btn {
+    display: flex;
+    margin-left: 90%;
+}
+.login-btn {
+    background-color: #FFFFFF;
+    border: 0;
+    color: grey;
+    cursor: pointer;
+}
+.register-btn {
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: grey;
+    cursor: pointer;
+}
+#hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+section {
+    display: flex;
+    align-items: flex-start;
+    gap: 10%;
+    margin-left: 10%;
+}
+.hero-text {
+    flex-direction: row;
+    width: 500px;
+}
+section h1 {
+    font-weight: 700;
+    font-size: 4.8rem;
+}
+section p {
+    color: grey;
+}
+.desktop-img {
+    height: 400px;
+    max-width: 80%;
+}
+.mobile-img {
+    display: none;
+}
+.learn-more-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: black;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.img-wrapper {
+    margin-left: 10%;
+    display: inline;    
+}
+@media only screen and (max-width: 768px) {
+    * {
+        margin: 0;
+    }
+    .desktop-img {
+        display: none;
+    }
+    .mobile-img {
+        order: -1;
+        display: block;
+        margin-bottom: 10px;
+    }
+    .menu {
+        margin: 0;
+    }
+    #hamburger-menu {
+        position: absolute;
+        left: 80%;
+        padding: 10px 20px;
+        font-size: 24px; 
+        display: flex; 
+        cursor: pointer;  
+    }
+    .btn {
+        display: none;
+    }
+     nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        background: #fff;
+        width: 50%;
+        box-shadow: grey;
+        padding: 1rem;
+    }
+    .dropdown-content {
+        display: none;
+        padding: 10px 0;
+        width: 250px;
+        z-index: 10;
+    }
+    .dropdown-content li:hover {
+        background-color: #444;
+    }
+    section {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    nav ul.active {
+        display: flex;  
+    }
+
+    nav ul li {
+        margin-bottom: 1rem;
+    }
+
+    nav ul li:last-child {
+        margin-bottom: 0;
+    } 
+    section h1 {
+        font-size: 2rem;
+        padding: 10px 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .learn-more-btn {
+        font-size: 1rem;
+        margin-left: 35%;
+    }
+    .img-wrapper {
+        align-items: center;
+        display: flex;
+        margin-left: 0;
+        margin-top: 20px;
+        font-size: 2rem;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="menu">
+        <img src="images/logo.svg" alt="Logo" class="logo">
+            <ul>
+              <li class="dropdown">
+                Features 
+                <img src="images/icon-arrow-down.svg" alt="arrow down" class="arrow-icon" />
+                <ul class="dropdown-content">
+                  <li><img src="images/icon-todo.svg" alt="Todo" class="dropdown-content-logo">Todo List</li>
+                  <li><img src="images/icon-calendar.svg" alt="Calendar" class="dropdown-content-logo">Calendar</li>
+                  <li><img src="images/icon-reminders.svg" alt="Reminders" class="dropdown-content-logo">Reminders</li>
+                  <li><img src="images/icon-planning.svg" alt="Planning" class="dropdown-content-logo">Planning</li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                Company 
+                <img src="images/icon-arrow-down.svg" alt="arrow down" class="arrow-icon" />
+                <ul class="dropdown-content">
+                  <li>History</li>
+                  <li>Our Team</li>
+                  <li>Blog</li>
+                </ul>
+              </li>              
+              <li class="dropdown">Careers</li>
+              <li class="dropdown">About</li>
+            </ul>
+        <div class="btn">
+          <button class="login-btn">Login</button>
+          <button class="register-btn">Register</button>
+        </div>
+        <div id="hamburger-menu">
+          <img src="images/icon-menu.svg" alt="Hamburger">
+          <!-- <img src="images/icon-close-menu.svg" alt=""> -->
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <div class="hero-text">
+        <h1>Make remote work</h1>
+        <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+        <button class="learn-more-btn">Learn more</button>
+      </div>
+      <img src="images/image-hero-desktop.png" alt="Man Holding a Laptop" class="desktop-img">
+      <img src="images/image-hero-mobile.png" alt="Man Holding a Laptop" class="mobile-img">
+    </section>
+    <footer class="img-wrapper">
+      <img src="images/client-databiz.svg" alt="dataBiz">
+      <img src="images/client-audiophile.svg" alt="audiophile">
+      <img src="images/client-meet.svg" alt="meet">
+      <img src="images/client-maker.svg" alt="maker">
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
