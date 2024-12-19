@@ -185,10 +185,10 @@ section p {
         display: none;
         padding: 10px 0;
         width: 250px;
-        z-index: 10;
         font-size: 1rem;
-        margin-top: 10%;
+        margin-top: 5%;
         max-height: 30vh;
+        z-index: 10;
     }
     .arrow-icon {
         margin-top: 5%;
