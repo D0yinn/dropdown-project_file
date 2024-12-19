@@ -178,7 +178,7 @@ section p {
         background: #fff;
         width: 50%;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        padding: 1rem;
+        padding: 10px;
         font-size: 1rem;
         height: 45vh;
         border-radius: 0;
@@ -189,7 +189,7 @@ section p {
         width: 150px;
         font-size: 1rem;
         margin-top: 5%;
-        max-height: 30vh;
+        max-height: 27vh;
         z-index: 10;
         border-radius: 0;
     }
