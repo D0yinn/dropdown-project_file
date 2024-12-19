@@ -194,6 +194,7 @@ section p {
         max-height: 27vh;
         z-index: 10;
         border-radius: 0;
+        margin-left: 0;
     }
     .arrow-icon {
         margin-top: 5%;
