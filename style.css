@@ -35,7 +35,7 @@ nav ul{
     display: flex;
     list-style: none;
     color: grey;
-    margin-left: 10%;
+    margin-left: 7%;
 }
 .dropdown {
     position: relative;
